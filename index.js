@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 navmenu.classList.remove('animate-entry');
                 navmenu.classList.add('animate-exit');
             }else{
+                navmenuButton2.classList.remove('hidden');
                 navmenuLinks.classList.add('animate-fade-in');
                 navmenuLinks.classList.remove('animate-fade-out');
                 navmenuButton2.classList.add('animate-fade-in');
@@ -22,7 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 navmenu.classList.remove('animate-exit');
                 navmenu.classList.add('animate-entry');
             }
-        navmenuButton2.classList.toggle('hidden');
+        
     });
+    });
+    navmenuButton2.addEventListener('animationend', function (e) {
+        if (e.animationName === 'fade-out') {
+            navmenuButton2.classList.add('hidden');
+        }
     });
 });
