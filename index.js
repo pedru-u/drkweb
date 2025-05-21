@@ -7,15 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
     navmenuButtons.forEach(function (button){
         button.addEventListener('click', function (){
             console.log('navmenu-button clicked');
-            navmenuLinks.classList.toggle('animate-appear');
             if (navmenu.classList.contains('animate-entry')){
                 navmenuLinks.classList.add('animate-fade-out');
                 navmenuLinks.classList.remove('animate-fade-in');
+                navmenuButton2.classList.remove('animate-fade-in');
+                navmenuButton2.classList.add('animate-fade-out');
                 navmenu.classList.remove('animate-entry');
                 navmenu.classList.add('animate-exit');
             }else{
                 navmenuLinks.classList.add('animate-fade-in');
                 navmenuLinks.classList.remove('animate-fade-out');
+                navmenuButton2.classList.add('animate-fade-in');
+                navmenuButton2.classList.remove('animate-fade-out');
                 navmenu.classList.remove('animate-exit');
                 navmenu.classList.add('animate-entry');
             }
