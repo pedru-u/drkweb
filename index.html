@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
 </head>
-<body class="bg-amber-50-100 font-roboto">
+<body class="bg-amber-50-100 font-roboto bg-amber-50">
   <div id="phone-menu" class="w-0 z-10 fixed h-screen right-0  bg-amber-100">
-    <div class="flex flex-col justify-center items-center h-screen">
+    <div class="flex flex-col justify-center items-center h-screen font-cinzel semi-bold">
       <ul id="link-list" class="opacity-0">
         <li class="my-4 text-2xl"><a href="#home">Home</a></li>
         <li class="my-4 text-2xl"><a href="#about">About</a></li>
@@ -18,22 +18,61 @@
     </div>
 
   </div>
-  <div id="main-content" class="h-[1000px]">
-    <div id="navbar" class="fixed flex flex-row justify-between items-center bg-blue-900 w-screen text-gray-200">
-      <div id="title" class="flex flex-col mx-2">
-        <h1 class="text-lg sm:text-2xl md:text-4xl">Dr Konrad Wronka</h1>
-        <h2 class="text-sm sm:text-lg">MBBS FRCS (Tr & Orth)</h2>
-      </div>
-      <div id="items" class="flex flex-row items-center mx-2">
-        <ul class="hidden md:flex flex-row justify-between items-center">
-          <li class="mx-2" ><a href="#home">Home</a></li>
-          <li class="mx-2"><a href="#about">About</a></li>
-          <li class="mx-2"><a href="#services">Services</a></li>
-          <li class="mx-2"><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="navmenu-button" class="cursor-pointer text-white md:hidden"><img src="./assets/menu-icon.svg" alt="menu-icon" class="size-8"></button>
-      </div>
+  <div id="navbar" class="fixed flex flex-row justify-between items-center bg-blue-950 w-screen text-white shadow-[0_2px_10px_rgba(0,0,0,0.5)] ">
+    <div id="title" class="flex flex-col mx-2">
+      <h1 class="text-lg sm:text-2xl font-cinzel md:text-4xl">Konrad Wronka</h1>
+      <h2 class="text-sm font-cinzel sm:text-lg">MBBS FRCS (Tr & Orth)</h2>
+    </div>
+    <div id="items" class="flex flex-row items-center mx-2">
+      <ul class="hidden md:flex flex-row justify-between items-center font-cinzel font-semibold">
+        <li class="mx-2 sm:text-lg"><a href="#home">Home</a></li>
+        <li class="mx-2 sm:text-lg"><a href="#about">About</a></li>
+        <li class="mx-2 sm:text-lg"><a href="#services">Services</a></li>
+        <li class="mx-2 sm:text-lg"><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="navmenu-button" class="cursor-pointer text-white md:hidden"><img src="./assets/menu-icon.svg" alt="menu-icon" class="size-8"></button>
+    </div>
+  </div>
+  <div id="main-content" class="h-[1000px] pt-20">
+    <div id="home-bg" class="absolute w-screen ">
 
+    </div>
+    <div id="home" class="flex flex-col justify-evenly items-center sm:flex-row sm:mx-10 sm:my-10">
+      <div id="image-container" class="rounded-[50%] bg-[url(./assets/drkprofile.jpg)] w-[40vh] h-[40vh] sm:w-[50vh] sm:h-[50vh] bg-center bg-cover border-blue-950 border-1 shadow-sm shadow-black"></div>
+      <div id="text-container" class="flex flex-col justify-center items-center sm:items-start my-4">
+        <h1 class="text-3xl text-center font-cinzel sm:text-7xl ">Konrad Wronka</h1>
+        <h2 class="text-2xl font-cinzel sm:text-5xl">MBBS FRCS (Tr & Orth)</h2>
+        <p class="sm:text-2xl font-cinzel text-center sm:text-left">Consultant Orthopaedic Surgeon</p>
+      </div>
+    </div>
+    <hr class="border-1 border-black mx-5 sm:mx-10 my-5 rounded-2xl">
+    <br><br><br><br>
+    <div id="about" class="flex flex-col justify-center items-center sm:mx-10 sm:my-20">
+      <div id="about-title" class="my-10">
+        <h1 id="title" class="font-cinzel text-5xl sm:text-6xl">About Me</h1>
+      </div>
+      <br>
+      <div id="about-content" class=" flex flex-col justify-between items-center w-screen">
+        <div id="about-text" class="font-montserrat flex flex-col text-xl text-justify mx-4 sm:w-10/12">
+          <p>
+            I am a Consultant Trauma and Orthopaedic Surgeion based in Bury St Edmunds. Im am specalised 
+            in hip surgery, and providing care to patients with hip injuries and disorders, on top of providing care to patients that have problems post hip replacement.
+          </p>
+          <p>
+            In August 2019 I was appointed Hip Specialist Surgeon at West Suffolk Hospital, Bury St Edmunds. I was later appointed as
+            the lead for Hip Fracture care in West Suffolk Hospital, and am always working to improve the care and
+            service we provide. I provide appointments for all NHS patients at St Edmunds Hosputal, as well as those with private health insureance, or patients who wish to self-fund their treatment.
+          </p>
+          <p>
+            With a Postgraduate Diploma in Medical Educastion from Cardiff University, I am involved in clinical research reltaed to the hip, having multiple publications, national and international presentations, on top of on-going projects.
+          </p>
+        </div>
+        <br>
+        <button class="bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <a href="./about.html">Learn More</a>
+        </button>
+        <br><br>
+      </div>
     </div>
   </div>
   <script src="./index.js"></script>

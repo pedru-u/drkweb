@@ -31,4 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
             navmenuButton2.classList.add('hidden');
         }
     });
+    navmenuLinks.forEach(function (link){
+        link.addEventListener('click',function (){
+            console.log('link clicked');
+            navmenuLinks.classList.add('animate-fade-out');
+                navmenuLinks.classList.remove('animate-fade-in');
+                navmenuButton2.classList.remove('animate-fade-in');
+                navmenuButton2.classList.add('animate-fade-out');
+                navmenu.classList.remove('animate-entry');
+                navmenu.classList.add('animate-exit');
+        })
+    });
+
 });
