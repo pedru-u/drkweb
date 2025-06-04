@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navmenuButton = document.getElementById('navmenu-button');
     const navmenuButton2 = document.getElementById('navmenu-button2');
-    const navmenuLinks = document.getElementById('link-list');
     const navmenuButtons = [navmenuButton, navmenuButton2];
+    const navmenuLinks = document.getElementById('link-list');
     const navmenu = document.getElementById('phone-menu');
     navmenuButtons.forEach(function (button){
         button.addEventListener('click', function (){
@@ -31,16 +31,27 @@ document.addEventListener('DOMContentLoaded', function () {
             navmenuButton2.classList.add('hidden');
         }
     });
-    navmenuLinks.forEach(function (link){
-        link.addEventListener('click',function (){
-            console.log('link clicked');
+    // Fix: Attach click event to each link inside navmenuLinks for smooth scroll and menu close
+    const navLinks = navmenuLinks.querySelectorAll('a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            // Close menu animations
             navmenuLinks.classList.add('animate-fade-out');
-                navmenuLinks.classList.remove('animate-fade-in');
-                navmenuButton2.classList.remove('animate-fade-in');
-                navmenuButton2.classList.add('animate-fade-out');
-                navmenu.classList.remove('animate-entry');
-                navmenu.classList.add('animate-exit');
-        })
+            navmenuLinks.classList.remove('animate-fade-in');
+            navmenuButton2.classList.remove('animate-fade-in');
+            navmenuButton2.classList.add('animate-fade-out');
+            navmenu.classList.remove('animate-entry');
+            navmenu.classList.add('animate-exit');
+            // Smooth scroll to section
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
     });
 
 });
