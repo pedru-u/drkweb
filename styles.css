@@ -10,7 +10,6 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-100: oklch(96.2% 0.059 95.617);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-black: #000;
@@ -221,17 +220,14 @@
   .bottom-1\/12 {
     bottom: calc(1/12 * 100%);
   }
-  .bottom-2 {
-    bottom: calc(var(--spacing) * 2);
-  }
-  .bottom-2\/12 {
-    bottom: calc(2/12 * 100%);
-  }
   .z-0 {
     z-index: 0;
   }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .m-2 {
     margin: calc(var(--spacing) * 2);
@@ -254,20 +250,8 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
-  }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
-  }
-  .ml-8 {
-    margin-left: calc(var(--spacing) * 8);
   }
   .flex {
     display: flex;
@@ -282,35 +266,8 @@
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
   }
-  .h-6 {
-    height: calc(var(--spacing) * 6);
-  }
-  .h-6\/12 {
-    height: calc(6/12 * 100%);
-  }
-  .h-9 {
-    height: calc(var(--spacing) * 9);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
-  .h-120 {
-    height: calc(var(--spacing) * 120);
-  }
-  .h-\[26rem\] {
-    height: 26rem;
-  }
   .h-\[28rem\] {
     height: 28rem;
-  }
-  .h-\[30rem\] {
-    height: 30rem;
   }
   .h-\[40vh\] {
     height: 40vh;
@@ -318,20 +275,11 @@
   .h-\[1000px\] {
     height: 1000px;
   }
-  .h-\[\[\]\] {
-    height: [];
-  }
-  .h-\[rem\] {
-    height: rem;
-  }
   .h-auto {
     height: auto;
   }
   .h-screen {
     height: 100vh;
-  }
-  .max-h-96 {
-    max-height: calc(var(--spacing) * 96);
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -341,9 +289,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .min-w-full {
     min-width: 100%;
@@ -365,9 +310,6 @@
   }
   .snap-center {
     scroll-snap-align: center;
-  }
-  .list-disc {
-    list-style-type: disc;
   }
   .flex-col {
     flex-direction: column;
@@ -396,12 +338,6 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
-  .overflow-y-hidden {
-    overflow-y: hidden;
-  }
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -425,17 +361,11 @@
   .border-blue-950 {
     border-color: var(--color-blue-950);
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
   .bg-amber-100 {
     background-color: var(--color-amber-100);
-  }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -459,8 +389,11 @@
   .bg-\[url\(\.\/assets\/hip-replacement\.jpeg\)\] {
     background-image: url(./assets/hip-replacement.jpeg);
   }
-  .bg-\[url\(\.\/assets\/hip-replacement\.jpg\)\] {
-    background-image: url(./assets/hip-replacement.jpg);
+  .bg-\[url\(\.\/assets\/hip-revision-preview\.jpeg\)\] {
+    background-image: url(./assets/hip-revision-preview.jpeg);
+  }
+  .bg-\[url\(\.\/assets\/hip-revision\.jpeg\)\] {
+    background-image: url(./assets/hip-revision.jpeg);
   }
   .bg-\[url\(\.\/assets\/painful-hip-replacement\.jpeg\)\] {
     background-image: url(./assets/painful-hip-replacement.jpeg);
@@ -485,17 +418,11 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
-  .px-16 {
-    padding-inline: calc(var(--spacing) * 16);
-  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
-  }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
@@ -559,12 +486,6 @@
   .opacity-40 {
     opacity: 40%;
   }
-  .opacity-50 {
-    opacity: 50%;
-  }
-  .opacity-60 {
-    opacity: 60%;
-  }
   .shadow-\[0_2px_10px_rgba\(0\,0\,0\,0\.5\)\] {
     --tw-shadow: 0 2px 10px var(--tw-shadow-color, rgba(0,0,0,0.5));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -623,11 +544,6 @@
       margin-block: calc(var(--spacing) * 20);
     }
   }
-  .sm\:h-96 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 96);
-    }
-  }
   .sm\:h-\[40rem\] {
     @media (width >= 40rem) {
       height: 40rem;
@@ -658,16 +574,6 @@
       align-items: flex-start;
     }
   }
-  .sm\:px-16 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 16);
-    }
-  }
-  .sm\:py-8 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 8);
-    }
-  }
   .sm\:text-left {
     @media (width >= 40rem) {
       text-align: left;
@@ -683,12 +589,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
-  .sm\:text-4xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .sm\:text-5xl {
@@ -781,6 +681,9 @@ html {
 }
 #home,#about, #services {
   scroll-margin-top: 7.5rem;
+}
+.card-container::-webkit-scrollbar {
+  display: none;
 }
 @property --tw-scroll-snap-strictness {
   syntax: "*";
