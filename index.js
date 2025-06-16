@@ -54,4 +54,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    cards = document.querySelectorAll('.card');
+    cardContainer = document.querySelector('.card-container');
+    const cardWidth = cards[0].offsetWidth;
+    let currentIndex = 0; // Initialize the index for the main cards
+
+    function scrollToNextCard() {
+        currentIndex = (currentIndex + 1) % cards.length; // Increment the index and loop back to the first card if necessary
+
+    // Scroll to the next card
+        cardContainer.scrollTo({
+            left: currentIndex * cardWidth, // Calculate the position of the next card
+            behavior: 'smooth', // Enable smooth scrolling
+        });
+
+    }
+    dotsInterval = setInterval(scrollToNextCard, 6000); // Change the interval as needed (5000ms = 5 seconds)
+
+    const dotList = document.getElementById('dot-list')
+    const dots = dotList.querySelectorAll('li');
+    console.log(dots);
+    dots.forEach(function (dot, index) {
+        dot.addEventListener('click', function () {
+            console.log('dot clicked');
+            clearInterval(dotsInterval); // Clear the interval to stop automatic scrolling when a dot is clicked
+            currentIndex = index; // Set the current index to the clicked dot's index // Get the width of a single card
+            cardContainer.scrollTo({
+                left: currentIndex * cardWidth, // Scroll to the position of the clicked dot
+                behavior: 'smooth', // Enable smooth scrolling
+            });
+        });
+    })
+    cardContainer.addEventListener('scroll', () => {
+    const containerScrollLeft = cardContainer.scrollLeft;
+
+    currentIndex = Math.round(containerScrollLeft / cardWidth);
+
+    dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+            dot.classList.add('active'); // Highlight the dot corresponding to the visible card
+            currentIndex = index
+        } else {
+            dot.classList.remove('active'); // Remove the highlight from other dots
+        }
+    });
+    });
 });

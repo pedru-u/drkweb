@@ -18,7 +18,7 @@
     </div>
 
   </div>
-  <div id="navbar" class="fixed flex flex-row justify-between items-center bg-linear-to-r from-blue-950 to-blue-900 w-full text-white shadow-[0_2px_10px_rgba(0,0,0,0.5)] ">
+  <div id="navbar" class="fixed flex flex-row justify-between items-center bg-linear-to-r from-blue-950 to-blue-900 w-full text-white shadow-[0_2px_10px_rgba(0,0,0,0.5)] z-10">
     <div id="title" class="flex flex-col mx-2">
       <h1 class="text-lg sm:text-2xl font-cinzel md:text-4xl">Konrad Wronka</h1>
       <h2 class="text-sm font-cinzel sm:text-lg">MBBS FRCS (Tr & Orth)</h2>
@@ -37,23 +37,23 @@
     <div id="home-bg" class="absolute w-full">
 
     </div>
-    <div id="home" class="flex flex-col justify-evenly items-center sm:flex-row sm:mx-10 sm:my-10">
+    <div id="home" class="flex flex-col justify-evenly items-center lg:flex-row sm:mx-10 sm:my-10">
       <div id="image-container" class="rounded-[50%] bg-[url(./assets/drkprofile.jpg)] w-[40vh] h-[40vh] sm:w-[50vh] sm:h-[50vh] bg-center bg-cover border-blue-950 border-1 shadow-sm shadow-black"></div>
       <div id="text-container" class="flex flex-col justify-center items-center sm:items-start my-4">
         <h1 class="text-3xl text-center font-cinzel sm:text-7xl ">Konrad Wronka</h1>
         <h2 class="text-2xl font-cinzel sm:text-5xl">MBBS FRCS (Tr & Orth)</h2>
-        <p class="sm:text-2xl font-cinzel text-center sm:text-left">Consultant Orthopaedic Surgeon</p>
+        <p class="sm:text-2xl font-cinzel text-center lg:text-left">Consultant Orthopaedic Surgeon</p>
       </div>
     </div>
     <hr class="border-1 border-black mx-5 sm:mx-10 my-5 rounded-2xl">
     <br><br><br><br>
     <div id="about" class="flex flex-col justify-center items-center sm:mx-10 sm:my-20">
       <div id="about-title" class="my-10">
-        <h1 id="title" class="font-cinzel text-5xl sm:text-6xl">About Me</h1>
+        <h1 id="title" class="font-cinzel text-5xl lg:text-6xl">About Me</h1>
       </div>
       <br>
       <div id="about-content" class=" flex flex-col justify-between items-center w-full">
-        <div id="about-text" class="font-montserrat flex flex-col text-xl text-justify mx-4 sm:w-10/12">
+        <div id="about-text" class="font-montserrat flex flex-col text-xl text-justify mx-4 sm:w-10/12 lg:w-6/12">
           <p>
             I am a Consultant Trauma and Orthopaedic Surgeon based in Bury St Edmunds. I am specialised 
             in hip surgery, and providing care to patients with hip injuries and disorders, as well as providing care to patients that have problems post hip replacement.
@@ -77,38 +77,45 @@
       </div>
     </div>
     <br><br>
-    <div id="services" class="flex flex-col justify-center items-center w-full h-auto ">
+    <div id="services" class="relative flex flex-col justify-center items-center w-full h-auto ">
       <div id="services-title">
-        <h1 class="font-cinzel text-5xl sm:text-6xl">Services</h1>
+        <h1 class="font-cinzel text-5xl lg:text-6xl">Services</h1>
       </div>
       <br>
-      <div id="services-content" class="flex flex-row items-start overflow-x-auto w-full snap-x snap-mandatory scrollbar-hide">
-        <div id="hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-replacement.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] snap-center">
+      <div id="services-content" class="flex flex-row items-start overflow-x-auto w-full snap-x snap-mandatory scrollbar-hide card-container relative">
+        <div id="hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-replacement.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <h2 class="font-cinzel text-3xl sm:text-6xl text-white z-10 relative">Hip Replacement</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl sm:text-3xl px-12 py-6 rounded-lg z-10 mt-12 bottom-1/12"><a href="./hip-rep.html" class="text-xl sm:text-3xl">Learn More</a></button>
+          <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Replacement</h2>
+          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-rep.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="hip-revision" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-revision.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] snap-center">
+        <div id="hip-revision" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-revision.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <h2 class="font-cinzel text-3xl sm:text-6xl text-white z-10 relative">Hip Revision</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl sm:text-3xl px-12 py-6 rounded-lg z-10 mt-12 bottom-1/12"><a href="./hip-rev.html" class="text-xl sm:text-3xl">Learn More</a></button>
+          <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Revision</h2>
+          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-rev.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="hip-injuries" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-injuries.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] snap-center">
+        <div id="hip-injuries" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-injury-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <h2 class="font-cinzel text-3xl sm:text-6xl text-white z-10 relative">Hip Injuries</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl sm:text-3xl px-12 py-6 rounded-lg z-10 mt-12 bottom-1/12"><a href="./hip-injuries.html" class="text-xl sm:text-3xl">Learn More</a></button>
+          <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Injuries</h2>
+          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-injuries.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="hip-pain" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-pain.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] snap-center">
+        <div id="hip-pain" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-pain-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <h2 class="font-cinzel text-3xl sm:text-6xl text-white z-10 relative">Hip Pain</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl sm:text-3xl px-12 py-6 rounded-lg z-10 mt-12 bottom-1/12"><a href="./hip-pain.html" class="text-xl sm:text-3xl">Learn More</a></button>
+          <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Pain</h2>
+          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-pain.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="painful-hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/painful-hip-replacement.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] snap-center">
+        <div id="painful-hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/painful-hip-replacement-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <h2 class="font-cinzel text-3xl sm:text-6xl text-white z-10 relative">Painful Hip Replacement</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl sm:text-3xl px-12 py-6 rounded-lg z-10 mt-12 bottom-1/12"><a href="./painful-hip-replacement.html" class="text-xl sm:text-3xl">Learn More</a></button>
+          <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Painful Hip Replacement</h2>
+          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./painful-hip-replacement.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
       </div>
+      <ol id="dot-list" class="absolute left-1/2 bottom-0 -translate-x-1/2 flex flex-row justify-center items-center z-20 mt-24 bg-linear-0 from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.1)] w-full py-4">
+        <li data-slide="0" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5 active"></li>
+        <li data-slide="1" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5"></li>
+        <li data-slide="2" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5"></li>
+        <li data-slide="3" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5"></li>
+        <li data-slide="4" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5"></li>
+      </ol>
     </div>
   </div>
   <script src="./index.js"></script>
