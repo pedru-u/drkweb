@@ -4,10 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
+  <title>About Me</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-amber-50-100 font-roboto bg-amber-50">
+  <div id="phone-menu" class="w-0 z-20 fixed h-screen right-0  bg-amber-100">
+    <div class="flex flex-col justify-center items-center h-screen font-cinzel semi-bold">
+      <ul id="link-list" class="opacity-0">
+        <li class="my-4 text-2xl"><a href="./index.html#home">Home</a></li>
+        <li class="my-4 text-2xl"><a href="./index.html#about">About</a></li>
+        <li class="my-4 text-2xl"><a href="./index.html#services">Services</a></li>
+        <li class="my-4 text-2xl"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+      <button id="navmenu-button2" class="absolute top-0 end-0 cursor-pointer m-2 opacity-0 hidden"><img src="./assets/cross-icon.svg" alt="cross-icon" class="size-8"></button>
+    </div>
+
+  </div>
+  <div id="navbar" class="fixed flex flex-row justify-between items-center bg-linear-to-r from-blue-950 to-blue-900 w-full text-white shadow-[0_2px_10px_rgba(0,0,0,0.5)] z-10">
+    <div id="title" class="flex flex-col mx-2">
+      <h1 class="text-lg sm:text-2xl font-cinzel md:text-4xl">Konrad Wronka</h1>
+      <h2 class="text-sm font-cinzel sm:text-lg">MBBS FRCS (Tr & Orth)</h2>
+    </div>
+    <div id="items" class="flex flex-row items-center mx-2">
+      <ul class="hidden md:flex flex-row justify-between items-center font-cinzel font-semibold">
+        <li class="mx-2 sm:text-lg"><a href="./index.html#home">Home</a></li>
+        <li class="mx-2 sm:text-lg"><a href="./index.html#about">About</a></li>
+        <li class="mx-2 sm:text-lg"><a href="./index.html#services">Services</a></li>
+        <li class="mx-2 sm:text-lg"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+      <button id="navmenu-button" class="cursor-pointer text-white md:hidden"><img src="./assets/menu-icon.svg" alt="menu-icon" class="size-8"></button>
+    </div>
+  </div>
+  <div id="main-content" class="flex flex-col items-center justify-center pt-20">
+    <div id="about-home" class="flex flex-col justify-evenly items-center xl:flex-row sm:mx-10 sm:my-10 lg:mx-20">
+      <div id="image-container" class="rounded-[50%] bg-[url(./assets/drkprofile.jpg)] w-[40vh] h-[40vh] sm:w-[50vh] sm:h-[50vh] bg-center bg-cover border-blue-950 border-1 shadow-sm shadow-black"></div>
+      <div id="home-title" class="flex flex-col justify-center items-center font-cinzel mt-16 lg:mx-10">
+        <h1 class="text-6xl lg:text-8xl text-center mb-4">About Me</h1>
+        <hr class="border-1 border-black w-2/3 sm:w-5/6 rounded-full">
+      </div>
+    </div>
+    <br>
+    <hr class="hidden border-1 border-black w-11/12 mx-10 sm:flex">
+    <div id="about-personal" >
+      <div id="personal-title" class="flex flex-col justify-center items-center font-cinzel text-left mt-16 lg:mx-10">
+        <h1 class="text-4xl sm:text-6xl">Personal</h1>
+      </div>
+      <div id="personal-content" class="flex flex-col justify-center items-center mt-10 font-montserrat text-justify mx-8 text-lg sm:text-xl lg:text-2xl sm:mx-16 lg:mx-40">
+        <p class="">
+          I am a Consultant Trauma and Orthopaedic Surgeion based in Bury St Edmunds, Suffolk. I specialise in hip surgery and provide care for patients with issues ranging from hip injuries and disorders to patients suffering from complications post hip surgery.
+        </p>
+        <br>
+        <p>
+          My initial Foundation Training was completed in Wessex Deanery, with my Higher Specialty Training in Trauma and Orthopaedics in Wales. During my training I took part in fellowships in Ghent and Bruges, Belgium and Endo-Klinik, Hamburg, Germany. I later completed FRCS (Tr & Orth) in 2017, and was appointed to the specialist register in 2018.
+          I then went on to South West London Elective Orthopaedic Centre (SWLEOC), British Hip Society funded Fellowship in St George's Hospital, London and the Princess Elizabeth Orthopaedic Centre in Exeter, where I even further honed my practice of complex primary and revision hip arthroplasty.
+        </p>
+      </div>
+      <div id="work-title">
+
+      </div>
+      <div id="work-content">
+
+      </div>
+    </div>
+  </div>  
+  <script src="./index.js"></script>
 </body>
 </html>
