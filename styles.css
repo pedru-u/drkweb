@@ -841,6 +841,21 @@
       line-height: var(--tw-leading, var(--text-9xl--line-height));
     }
   }
+  .xl\:mx-60 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 60);
+    }
+  }
+  .xl\:mx-70 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 70);
+    }
+  }
+  .xl\:mx-80 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 80);
+    }
+  }
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
