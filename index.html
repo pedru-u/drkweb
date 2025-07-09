@@ -13,7 +13,7 @@
         <li class="my-4 text-2xl"><a href="#home">Home</a></li>
         <li class="my-4 text-2xl"><a href="./about.html">About</a></li>
         <li class="my-4 text-2xl"><a href="#services">Services</a></li>
-        <li class="my-4 text-2xl"><a href="#contact">Contact</a></li>
+        <li class="my-4 text-2xl"><a href="./contact.html">Contact</a></li>
       </ul>
       <button id="navmenu-button2" class="absolute top-0 end-0 cursor-pointer m-2 opacity-0 hidden"><img src="./assets/cross-icon.svg" alt="cross-icon" class="size-8"></button>
     </div>
@@ -29,7 +29,7 @@
         <li class="mx-2 sm:text-lg"><a href="#home">Home</a></li>
         <li class="mx-2 sm:text-lg"><a href="./about.html">About</a></li>
         <li class="mx-2 sm:text-lg"><a href="#services">Services</a></li>
-        <li class="mx-2 sm:text-lg"><a href="#contact">Contact</a></li>
+        <li class="mx-2 sm:text-lg"><a href="./contact.html">Contact</a></li>
       </ul>
       <button id="navmenu-button" class="cursor-pointer text-white md:hidden"><img src="./assets/menu-icon.svg" alt="menu-icon" class="size-8"></button>
     </div>
@@ -79,36 +79,33 @@
     </div>
     <br><br>
     <div id="services" class="relative flex flex-col justify-center items-center w-full h-auto ">
-      <div id="services-title">
+      <div id="services-title" class="flex flex-col justify-center items-center my-10">
         <h1 class="font-cinzel text-5xl lg:text-6xl">Services</h1>
+        <h2 class="font-cinzel text-lg lg:text-xl my-10"><a href="./contact.html" class="text-blue-600 hover:underline">Contact</a> for more information</h2>
       </div>
       <br>
       <div id="services-content" class="flex flex-row items-start overflow-x-auto w-full snap-x snap-mandatory scrollbar-hide card-container relative">
         <div id="hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-replacement.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Replacement</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-rep.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
         <div id="hip-revision" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-revision.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Revision</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-rev.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="hip-injuries" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-injury-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
+        <div id="hip-injuries" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-injury.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Injuries</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-injuries.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="hip-pain" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-pain-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
+        <div id="hip-pain" class="relative flex flex-col justify-center items-center bg-[url(./assets/hip-pain.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Hip Pain</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./hip-pain.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
-        <div id="painful-hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/painful-hip-replacement-preview.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
+        <div id="painful-hip-replacement" class="relative flex flex-col justify-center items-center bg-[url(./assets/painful-hip-replacement.jpeg)] bg-cover overflow-hidden bg-center min-w-full h-[28rem] sm:h-[40rem] lg:h-[45rem] 2xl:h-[60rem] snap-center card">
           <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
           <h2 class="font-cinzel text-3xl lg:text-6xl text-white z-10 relative text-center">Painful Hip Replacement</h2>
-          <button class="absolute bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl lg:text-3xl px-8 py-4 lg:px-12 lg:py-6 rounded-lg z-10 mt-12 bottom-1/12 mb-8"><a href="./painful-hip-replacement.html" class="text-xl lg:text-3xl">Learn More</a></button>
         </div>
+
       </div>
       <ol id="dot-list" class="absolute left-1/2 bottom-0 -translate-x-1/2 flex flex-row justify-center items-center z-20 mt-24 bg-linear-0 from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.1)] w-full py-4">
         <li data-slide="0" class="bg-gray-200 rounded-full w-4 h-4 mx-1.5 active"></li>
@@ -148,6 +145,10 @@
       </div>
     </div>
     <br><br>
+    <div id="book" class="flex flex-col justify-center items-center w-full my-10">
+      <button class="bg-linear-to-r from-blue-950 to-blue-900 text-white font-cinzel text-xl px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <a href="./contact.html">Book an appointment</a>
+    </div>
   </div>
   <script src="./index.js"></script>
   <script>
